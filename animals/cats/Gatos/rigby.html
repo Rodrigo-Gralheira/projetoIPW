@@ -39,17 +39,54 @@
       <div class="description">
         <h1>Rigby</h1>
         <p>O Rigby é um gato</p>
-          <a class="btmReserva" href="mailto:ReservaAnimal?subject=Rigby">Reserva</a>
+        <a class="btmReserva" href="mailto:ReservaAnimal?subject=Rigby">Reserva</a>
       </div>
 
     </div>
 
-  </div>
+    
+      <div class="forum">
+        <h2>Comentários</h2>
 
+        <div class="commentBox">
+          <input type="text" id="commentInput" placeholder="Escreve um comentário..." />
+          <button onclick="addComment()">Enviar</button>
+        </div>
+
+        <div class="comment">
+          <p><strong>João:</strong> O Rigby é muito brincalhão!</p>
+        </div>
+        <div class="comment">
+          <p><strong>Maria:</strong> Adoro gatos, o Rigby é lindo!</p>
+        </div>
+        <div class="comment">
+          <p><strong>Carlos:</strong> Já adotei um gato parecido, são ótimos companheiros.</p>
+        </div>
+
+      </div>
+
+    </div>
+ 
+  
 
   <footer>
     <p>Pé</p>
   </footer>
+
+
+  <script>
+    function addComment() {
+      const commentText = document.getElementById('commentInput').value;
+      if (commentText) {
+        const commentSection = document.querySelector('.forum');
+        const newComment = document.createElement('div');
+        newComment.classList.add('comment');
+        newComment.innerHTML = `<p><strong>Você:</strong> ${commentText}</p>`;
+        commentSection.appendChild(newComment);
+        document.getElementById('commentInput').value = '';
+      }
+    }
+  </script>
 </body>
 
 </html>
