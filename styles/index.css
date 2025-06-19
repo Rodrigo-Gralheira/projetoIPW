@@ -2,13 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #bce952;
+    background-color: #114800;
 }
 
 
 .navbar {
-    display: flex;
-    margin: 0 auto;
+    display: block;
+    margin: auto;
     margin-top: 10px;
     list-style-type: none;
     width: 90%;
@@ -17,21 +17,31 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-sizing: border-box;
-    background-color: #D6D451;
+    background-color: #297A4A;
+    padding: 0;
 }
 
 .navbar li {
-    display: inline;
+    display: inline-block;
+    padding: 1em 1em;
+}
+
+.navbar li:hover{
+    background-color: #0F5C2E
 }
 
 .navbar a {
-    display: inline-block;
-    padding: 3px 10px 3px 22px;
     text-decoration: none;
+    color: #000000;
+}
+
+#navFirst{
+    border-top-left-radius: 10px;
 }
 
 #navAboutUs {
-    margin-left: auto;
+    border-top-right-radius: 10px;
+    float:right;
 }
 
 .bigBox {
@@ -43,7 +53,7 @@ body {
     width: 90%;
     height: 100%;
     box-sizing: border-box;
-    background-color: #FFE3AA;
+    background-color: #C7E99B;
 }
 
 .row {
@@ -108,7 +118,7 @@ body {
     justify-content: center;
     width: 90%;
     border: 1px solid;
-    background-color: #FDD788;
+    background-color: #98C261;
     box-sizing: border-box;
 
 }
@@ -173,6 +183,10 @@ body {
     justify-content: center;
     margin: 0 auto;
     width: 15%;
+    background-color: #297A4A;
+}
+.btmReserva:hover{
+    background-color: #0F5C2E;
 }
 
 .forum {
@@ -181,7 +195,7 @@ body {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #FFE3AA;
+    background-color: #98C261;
     margin-bottom: 100px;
 }
 
@@ -209,7 +223,7 @@ button {
     width: 70%;
     padding: 10px 15px;
     font-size: 1rem;
-    background-color: #d6d451;
+    background-color: #297A4A;
     border: 1px solid #999;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -229,6 +243,6 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-sizing: border-box;
-    background-color: #D6D451;
+    background-color: #297A4A;
     justify-content: center;
 }
