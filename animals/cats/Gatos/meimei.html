@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página do Animal</title>
+  <link rel="stylesheet" href="../../../styles/index.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="navbar">
+      <li class="navbarItem" id="navFirst">
+        <a href="../../../index.html">Home</a>
+      </li>
+      <li class="navbarItem">
+        <a href="../cats.html">Cats</a>
+      </li>
+      <li class="navbarItem">
+        <a href="../../dogs/index.html">Dogs</a>
+      </li>
+      <li class="navbarItem" id="navAboutUs">
+        <a href="../../about-us.html">About Us</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="bigBox">
+
+    <div class="row">
+
+      <div class="smallBox">
+        <div class="imgFrame">
+          <a href="./cats.html"><img src="../../../images/meimeiGato.jpg" alt="MeiMei" /></a>
+        </div>
+      </div>
+
+      <div class="description">
+        <h1>MeiMei</h1>
+        <p>A MeiMei é uma gata</p>
+        <a class="btmReserva" href="mailto:ReservaAnimal?subject=MeiMei">Reserva</a>
+      </div>
+
+    </div>
+
+    
+      <div class="forum">
+        <h2>Comentários</h2>
+
+        <div class="commentBox">
+          <input type="text" id="commentInput" placeholder="Escreve um comentário..." />
+          <button onclick="addComment()">Enviar</button>
+        </div>
+
+      </div>
+
+    </div>
+ 
+  
+
+  <footer>
+    <p>Pé</p>
+  </footer>
+
+
+  <script>
+    function addComment() {
+      const commentText = document.getElementById('commentInput').value;
+      if (commentText) {
+        const commentSection = document.querySelector('.forum');
+        const newComment = document.createElement('div');
+        newComment.classList.add('comment');
+        newComment.innerHTML = `<p><strong>Você:</strong> ${commentText}</p>`;
+        commentSection.appendChild(newComment);
+        document.getElementById('commentInput').value = '';
+      }
+    }
+  </script>
+</body>
+
+</html>
