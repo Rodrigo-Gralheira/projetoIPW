@@ -1,3 +1,16 @@
+:root {
+    --bg-main: #114800;
+    --bg-navbar: #297A4A;
+    --bg-navbar-hover: #0F5C2E;
+    --bg-box: #C7E99B;
+    --bg-title-box: #98C261;
+    --bg-button: #297A4A;
+    --bg-button-hover: #0F5C2E;
+    --bg-comment: antiquewhite;
+    --border-color: #999;
+    --text-color: #000000;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +30,7 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-sizing: border-box;
-    background-color: #297A4A;
+    background-color: var(--bg-navbar);
     padding: 0;
 }
 
@@ -27,12 +40,12 @@ body {
 }
 
 .navbar li:hover{
-    background-color: #0F5C2E
+    background-color: var(--bg-navbar-hover);
 }
 
 .navbar a {
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color);
 }
 
 #navFirst{
@@ -53,7 +66,7 @@ body {
     width: 90%;
     height: 100%;
     box-sizing: border-box;
-    background-color: #C7E99B;
+    background-color: var(--bg-box);
 }
 
 .row {
@@ -118,7 +131,7 @@ body {
     justify-content: center;
     width: 90%;
     border: 1px solid;
-    background-color: #98C261;
+    background-color: var(--bg-title-box);
     box-sizing: border-box;
 
 }
@@ -175,18 +188,18 @@ body {
 }
 
 .btmReserva {
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     width: 50%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 15%;
-    background-color: #297A4A;
+    background-color: var(--bg-button);
 }
 .btmReserva:hover{
-    background-color: #0F5C2E;
+    background-color: var(--bg-button-hover);
 }
 
 .forum {
@@ -195,7 +208,7 @@ body {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #98C261;
+    background-color: var(--bg-title-box);
     margin-bottom: 100px;
 }
 
@@ -209,21 +222,21 @@ body {
 #commentInput {
     width: 70%;
     padding: 10px;
-    border: 1px solid #999;
+    border: 1px solid var(--border-color);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     font-size: 1rem;
     margin-right: 10px;
     box-sizing: border-box;
-    background-color:antiquewhite;
+    background-color: var(--bg-comment);
 }
 
 button {
     width: 70%;
     padding: 10px 15px;
     font-size: 1rem;
-    background-color: #297A4A;
-    border: 1px solid #999;
+    background-color: var(--bg-button);
+    border: 1px solid var(--border-color);
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     cursor: pointer;
@@ -242,7 +255,7 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-sizing: border-box;
-    background-color: #297A4A;
+    background-color: var(--bg-navbar);
     justify-content: center;
 }
 
